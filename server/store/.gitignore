@@ -1,0 +1,17 @@
+# Java
+/server/target/
+*.log
+*.class
+*.jar
+
+# Node.js (React)
+node_modules/
+dist/
+build/
+
+# Common
+.env
+.DS_Store
+.idea/
+.vscode/
+*.iml
