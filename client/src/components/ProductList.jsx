@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; 
+//import { useNavigate } from "react-router-dom"; 
 import { useAuth } from "../context/AuthContext";
 import { getAllProducts } from "../services/productService";
 
@@ -8,7 +8,7 @@ import { getAllProducts } from "../services/productService";
 const ProductList  = () => {
     
     const [products, setProducts] = useState([]);
-    const [error, setError] = useState("");
+   // const [error, setError] = useState("");
     const {token} = useAuth(); 
     //console.log("Token being sent:", token); 
     useEffect(() => {
@@ -45,6 +45,7 @@ const ProductList  = () => {
 
     return (
         <div>
+            <h1 className="text-3xl font-bold underline">Hello Tailwind!</h1>
           <h2>Products</h2>
           {products.map((p) => (
             <div key={p.id}>
